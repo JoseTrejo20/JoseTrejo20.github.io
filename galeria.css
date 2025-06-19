@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0c4f57;            
+}
+.navbar-logo {
+  background-color: #002b5c;            
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 4px solid rgb(10, 3, 5);
+}
+
+.logo-img { height: 40px; }
+
+.nav-list-logo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+.nav-list-logo li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-list-logo li a:hover {
+  background-color: #4da6ff;           
+  color: #002b5c;
+}
+.filtros-contenedor {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+.grid-filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 301px); 
+  grid-auto-rows: 325px;                           
+  gap: 3px;
+  justify-content: center;
+}
+.grid-filtros > div {                              
+  border: 2px solid rgb(9, 217, 12);
+  background: #090808;
+  border-radius: 10px;
+  box-shadow: -4px -3px 7px 4px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-filtros img {
+  width: 78%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.galeria1 img { filter: blur(5px); }
+.galeria2 img { filter: brightness(50%); }
+.galeria3 img { filter: grayscale(50%); }
+.galeria4 img { filter: hue-rotate(50deg); }
+.galeria5 img { filter: invert(25%); }
+.galeria6 img { filter: opacity(30%); }
+.galeria7 img { filter: saturate(40%); }
+.galeria8 img { filter: sepia(35%); }
+.galeria9 img { filter: saturate(30%); }
+.galeria10 img { filter: sepia(25%); }
+
+.galeria1:hover   img { filter: blur(0);            transform: scale(0.8); }
+.galeria2:hover   img { filter: brightness(100%);   transform: scaleX(0.5); }
+.galeria3:hover   img { filter: grayscale(1);       transform: scale3d(1,1,1); }
+.galeria4:hover   img { filter: hue-rotate(0deg);   transform: scale(1.7); }
+.galeria5:hover   img { filter: invert(0);          transform: scale(1); }
+.galeria6:hover   img { filter: opacity(100%);      transform: rotate(1.1deg); }
+.galeria7:hover   img { filter: saturate(100%);     transform: perspective(0.6px); }
+.galeria8:hover   img { filter: sepia(0);           transform: none; }
+.galeria9:hover   img { filter: saturate(100%);     transform: scale(1) rotate(0.5deg); }
+.galeria10:hover  img { filter: sepia(0);           transform: rotate(1deg); }
+
+
+
